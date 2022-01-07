@@ -1,14 +1,28 @@
 {
-  "name": "tszip-demo",
+  "name": "react-library-starter",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "lib",
+    "demo"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./dist/index.js",
+    "./*": "./dist/*/index.js"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "tszip dev",
+    "build": "tszip build",
+    "demo": "yarn workspace demo build",
+    "demo-dev": "yarn workspace demo dev",
+    "lint": "eslint --fix src/**/*.ts"
   },
   "dependencies": {
+    "@tszip/tszip": "latest",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint-plugin-react": "^7.28.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
@@ -16,11 +30,9 @@
   "devDependencies": {
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.7.0",
     "autoprefixer": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest",
+    "eslint-config-next": "^12.0.7",
     "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "^4.5.4"

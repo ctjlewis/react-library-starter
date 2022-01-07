@@ -1,0 +1,11 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Christian Lewis",
+  "license": "MIT",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev"
+  }
+}

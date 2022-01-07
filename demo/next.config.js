@@ -1,6 +1,9 @@
 module.exports = {
   reactStrictMode: true,
-  webpack: (config) => {
+  experimental: {
+    externalDir: true,
+  },
+  webpack: ({ ...config }) => {
     // config.experiments = { topLevelAwait: true };
     // config.resolve.fallback = {
     //   assert: false,
@@ -13,6 +16,8 @@ module.exports = {
     //   constants: false,
     //   os: false,
     // };
-    return config;
+    return {
+      ...config,
+    };
   },
-}
+};

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { WelcomeMessage } from "../../../src";
 
 export default function Home() {
   return (
@@ -11,9 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="text-center">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        {WelcomeMessage()}
 
         <p className="my-8 text-center md:my-16 font-size-3">
           Get started by editing{" "}
