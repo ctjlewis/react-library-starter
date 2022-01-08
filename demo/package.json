@@ -1,8 +1,6 @@
 {
-  "name": "demo",
+  "name": "react-library-starter-demo",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Christian Lewis",
   "license": "MIT",
   "scripts": {
     "build": "next build",

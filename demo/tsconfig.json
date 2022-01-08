@@ -1,17 +1,14 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "../lib/tsconfig.json",
   "include": [
-    "../src/**/*",
     "src/**/*",
     "next-env.d.ts"
   ],
   "compilerOptions": {
     "baseUrl": "..",
     "paths": {
-      "components": ["dist"],
-      "components/*": [
-        "dist/*"
-      ],
+      "components": ["lib/dist"],
+      "components/*": ["lib/dist/*"],
     },
   }
 }

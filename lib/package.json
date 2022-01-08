@@ -1,0 +1,15 @@
+{
+  "name": "react-library-starter",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./dist/index.js",
+    "./*": "./dist/*/index.js"
+  },
+  "scripts": {
+    "dev": "tszip dev",
+    "build": "tszip build",
+    "lint": "eslint --fix src/**/*.ts"
+  }
+}

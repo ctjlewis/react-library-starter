@@ -2,23 +2,10 @@
   "name": "react-library-starter",
   "version": "0.1.0",
   "private": true,
-  "workspaces": [
-    "lib",
-    "demo"
-  ],
-  "exports": {
-    "./package.json": "./package.json",
-    ".": "./dist/index.js",
-    "./*": "./dist/*/index.js"
-  },
   "scripts": {
-    "dev": "tszip dev",
-    "build": "tszip build",
-    "demo": "yarn workspace demo",
-    "demo-dev": "yarn demo dev",
-    "demo-build": "yarn build && yarn demo build",
-    "demo-start": "yarn demo start",
-    "lint": "eslint --fix src/**/*.ts"
+    "build": "yarn lib && yarn demo",
+    "lib": "cd lib && yarn build",
+    "demo": "cd demo && yarn build"
   },
   "dependencies": {
     "@tszip/tszip": "3.0.3",
