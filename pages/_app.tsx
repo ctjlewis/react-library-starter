@@ -1,4 +1,4 @@
-import "./styles/index.css";
+import "components/styles";
 import type { AppProps } from "next/app";
 import { StrictMode } from "react";
 

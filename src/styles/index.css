@@ -130,10 +130,16 @@
 /* FLEX */
 @layer base {
   /**
-   * Flex container that fills parent.
+   * A container that fills its parent.
    */
   .expanded {
-    @apply flex flex-1 items-stretch w-full h-full;
+    @apply h-full w-full;
+  }
+  /**
+   * Flex container that fills its content.
+   */
+  .filled {
+    @apply flex flex-1 items-stretch;
   }
   /**
    * A pure-flex container will be display: flex.
@@ -166,7 +172,7 @@
   code {}
 
   main {
-    @apply px-4 py-8 flex-col expanded flex-center;
+    @apply px-4 py-8 flex-col filled flex-center;
   }
 
   header {

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+
 import { WelcomeMessage } from "components";
 
 export default function Home() {
@@ -12,7 +13,8 @@ export default function Home() {
       </Head>
 
       <main>
-        {WelcomeMessage()}
+        
+        <WelcomeMessage />
 
         <p className="my-8 text-center md:my-16 font-size-3">
           Get started by editing{" "}

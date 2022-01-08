@@ -1,13 +1,25 @@
 {
   "name": "react-library-starter",
   "version": "0.1.0",
+  "exports": {
+    "./package.json": "./package.json",
+    "./styles": "./dist/styles/index.css",
+    "./styles/*": "./dist/styles/*/.css",
+    ".": "./dist/index.js",
+    "./*": "./dist/*/index.js"
+  },
   "scripts": {
-    "dev": "tszip dev",
-    "build": "tszip build",
-    "lint": "eslint --fix src/**/*.ts"
+    "build": "yarn lib-build && yarn demo-build",
+    "dev": "concurrently 'yarn lib-dev' 'sleep 5 && yarn demo-dev'",
+    "demo-dev": "yarn next dev",
+    "demo-build": "yarn next build",
+    "demo-start": "yarn next start",
+    "lib-dev": "tszip dev",
+    "lib-build": "tszip build",
+    "lib-lint": "eslint --fix src/**/*.ts"
   },
   "dependencies": {
-    "@tszip/tszip": "3.0.4",
+    "@tszip/tszip": "3.1.0",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "eslint-plugin-react": "^7.28.0",
