@@ -5,4 +5,13 @@
     "src/**/*",
     "next-env.d.ts"
   ],
+  "compilerOptions": {
+    "baseUrl": "..",
+    "paths": {
+      "components": ["dist"],
+      "components/*": [
+        "dist/*"
+      ],
+    },
+  }
 }
