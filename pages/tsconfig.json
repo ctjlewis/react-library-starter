@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig.json",
+  "include": [
+    "./**/*",
+    "next-env.d.ts"
+  ],
+  "exclude": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    "noEmit": true,
+    "baseUrl": "..",
+    "paths": {
+      "components": ["dist"],
+      "components/*": ["dist/*"],
+    },
+  }
+}

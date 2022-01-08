@@ -4,7 +4,7 @@ module.exports = {
    * This flag is required to import from outside of the demo/ folder.
    */
   experimental: {
-    externalDir: true,
+    // externalDir: true,
   },
   webpack: ({ ...config }) => {
     /**

@@ -1,11 +1,17 @@
 {
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "pages/next-env.d.ts"
   ],
   "exclude": [
     "node_modules"
   ],
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "components": ["dist"],
+      "components/*": ["dist/*"],
+    },
     "moduleResolution": "Node",
     "target": "ESNext",
     "module": "ESNext",

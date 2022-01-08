@@ -1,14 +1,13 @@
 {
   "name": "react-library-starter",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
-    "build": "yarn lib && yarn demo",
-    "lib": "cd lib && yarn build",
-    "demo": "cd demo && yarn build"
+    "dev": "tszip dev",
+    "build": "tszip build",
+    "lint": "eslint --fix src/**/*.ts"
   },
   "dependencies": {
-    "@tszip/tszip": "3.0.3",
+    "@tszip/tszip": "3.0.4",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "eslint-plugin-react": "^7.28.0",
@@ -20,6 +19,7 @@
     "@types/react": "17.0.38",
     "@types/react-dom": "latest",
     "autoprefixer": "10.4.2",
+    "concurrently": "^7.0.0",
     "eslint": "8.6.0",
     "eslint-config-next": "^12.0.7",
     "postcss": "latest",
