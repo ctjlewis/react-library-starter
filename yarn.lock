@@ -1539,10 +1539,10 @@
     rollup-plugin-preserve-shebang "^1.0.1"
     rollup-plugin-terser "^7.0.2"
 
-"@tszip/tszip@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@tszip/tszip/-/tszip-3.0.0.tgz#2aa570059a14d0fd847bee1318c2e711ac6385f9"
-  integrity sha512-IB4a0oMMXOXPMRy9KTo/08/iFN9BjZBFsVVxvsjO8pYs/b7CsZTuBPs3X6aOiBlg8pZ8TXN8ePLtk1eqjqSfVA==
+"@tszip/tszip@3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@tszip/tszip/-/tszip-3.0.3.tgz#5c81b0b866d9c50175cce5fb9e72d4ac9a226a9f"
+  integrity sha512-kQbdGV8uPOg8HXHosbLgVqrgMWDFgZ9VC2jCqsUzxdgvMf6QQxfnPheFNVdjFEJdaOAkVLbjG+Mt1+34I08ZHQ==
   dependencies:
     "@babel/core" "^7.16.7"
     "@babel/helper-module-imports" "^7.16.7"

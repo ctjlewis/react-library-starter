@@ -14,12 +14,14 @@
   "scripts": {
     "dev": "tszip dev",
     "build": "tszip build",
-    "demo": "yarn workspace demo build",
-    "demo-dev": "yarn workspace demo dev",
+    "demo": "yarn workspace demo",
+    "demo-dev": "yarn demo dev",
+    "demo-build": "yarn build && yarn demo build",
+    "demo-start": "yarn demo start",
     "lint": "eslint --fix src/**/*.ts"
   },
   "dependencies": {
-    "@tszip/tszip": "3.0.0",
+    "@tszip/tszip": "3.0.3",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "eslint-plugin-react": "^7.28.0",
