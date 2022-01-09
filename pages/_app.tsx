@@ -2,6 +2,7 @@ import "styles";
 
 import { FC, StrictMode } from "react";
 import type { AppProps } from "next/app";
+import { Footer } from "components/Footer";
 import Head from "next/head";
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
@@ -10,7 +11,12 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      
+      <main className="px-4 py-8">
+        <Component {...pageProps} />
+      </main>
+
+      <Footer />
     </StrictMode>
   );
 };

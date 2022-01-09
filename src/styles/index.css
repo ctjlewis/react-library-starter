@@ -173,7 +173,6 @@
   code {}
 
   main {
-    @apply px-8 py-16;
     @apply flex-col center expanded filled gap-16;
   }
 

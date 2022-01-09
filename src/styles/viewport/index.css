@@ -3,9 +3,10 @@
  * styling, which it likes to do for the #__next selector.
  */
 /* purgecss start ignore */
-html, body, #__next, #root {
+html, body, main {
   @apply m-0 p-0 box-border;
-  @apply min-h-screen flex-col filled;
+  @apply min-h-screen;
+  @apply expanded;
 }
 
 html,
