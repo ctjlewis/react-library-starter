@@ -172,7 +172,8 @@
   code {}
 
   main {
-    @apply px-4 py-8 flex-col center expanded filled;
+    @apply px-8 py-16;
+    @apply flex-col center expanded filled gap-16;
   }
 
   header {
@@ -241,6 +242,5 @@
   }
 }
 
-@import './elements/index.css';
 @import './viewport/index.css';
 @import './custom/index.css';
