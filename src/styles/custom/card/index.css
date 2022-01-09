@@ -1,9 +1,11 @@
 .card {
-  @apply m-4 p-6 text-left rounded-lg;
+  @apply m-4 p-6;
+  @apply text-left rounded-lg;
+  @apply max-w-sm;
+
   text-decoration: none;
   border: 1px solid #eaeaea;
   transition: color 0.15s ease, border-color 0.15s ease;
-  /* max-width: 300px; */
 }
 
 .card:hover,

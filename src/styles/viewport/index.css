@@ -4,24 +4,16 @@
  */
 /* purgecss start ignore */
 html, body, #__next, #root {
-  /* Border-box, no padding. */
   @apply m-0 p-0 box-border;
-  /* Fill screen, flex column, stretch items. */
   @apply min-h-screen flex-col filled;
 }
 
 html,
 body {
-  @apply font-size-sm interface;
+  @apply text-base interface;
   background: #fafafa;
-
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #90d5ec; */
-  /* background-image: linear-gradient(320deg, #fec3c5 20%, #d1ebf6 80%); */
 }
-
 /* purgecss end ignore */

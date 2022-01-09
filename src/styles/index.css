@@ -57,28 +57,22 @@
 
 /* FONT SIZES */
 @layer base {
-  .font-size-1 {
-    @apply text-4xl sm:text-5xl 2xl:text-6xl 4xl:text-8xl;
+  @media (min-width: 769px) {
+    html {
+      font-size: 1.5em;
+    }
   }
 
-  .font-size-2 {
-    @apply text-2xl sm:text-4xl 2xl:text-5xl 4xl:text-6xl;
+  @media (min-width: 1441px) {
+    html {
+      font-size: 1.8em;
+    }
   }
 
-  .font-size-3 {
-    @apply text-xl sm:text-2xl 2xl:text-4xl 4xl:text-5xl;
-  }
-
-  .font-size-base {
-    @apply text-lg sm:text-xl 2xl:text-2xl 4xl:text-3xl;
-  }
-
-  .font-size-sm {
-    @apply text-base 2xl:text-lg 4xl:text-2xl;
-  }
-
-  .font-size-xs {
-    @apply text-sm 2xl:text-base 4xl:text-lg;
+  @media (min-width: 1921px) {
+    html {
+      font-size: 2.5em;
+    }
   }
 }
 
@@ -95,27 +89,27 @@
   }
 
   h1, .h1 {
-    @apply font-size-1;
+    @apply text-4xl;
   }
 
   h2, .h2 {
-    @apply font-size-2;
+    @apply text-2xl;
   }
 
   h3, .h3 {
-    @apply font-size-3;
+    @apply text-xl;
   }
 
   h4, .h4 {
-    @apply font-size-base;
+    @apply text-lg;
   }
 
   h5, .h5 {
-    @apply font-size-sm;
+    @apply text-base;
   }
 
   h6, .h6 {
-    @apply font-size-xs;
+    @apply text-sm;
   }
 
   .title {
@@ -185,7 +179,7 @@
   }
 
   article {
-    @apply font-size-base serif mx-auto;
+    @apply text-lg serif mx-auto;
     @apply max-w-screen-sm lg:max-w-screen-lg 2xl:max-w-screen-2xl 4xl:max-w-screen-4xl;
   }
 }
@@ -193,12 +187,13 @@
 /* FORMS */
 @layer base {
   button, .button {
-    text-decoration: none !important;
     @apply cursor-pointer;
     @apply pure-flex flex-center;
     @apply px-8 py-4;
     @apply rounded-lg border-2;
     @apply bg-blue-500 text-white font-bold;
+
+    text-decoration: none !important;
   }
 
   label {

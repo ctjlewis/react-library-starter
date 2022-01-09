@@ -10,8 +10,8 @@ export const Footer = () => {
         rel="noopener noreferrer"
       >
         {"Powered by "}
-        <span className="h-4 ml-2 flex-center">
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+        <span className="ml-2 expanded filled center">
+          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={24} />
         </span>
       </a>
     </footer>
