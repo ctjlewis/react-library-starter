@@ -1,5 +1,6 @@
 {
   "name": "react-library-starter",
+  "license": "MIT",
   "version": "0.1.0",
   "exports": {
     "./package.json": "./package.json",
@@ -19,7 +20,7 @@
     "lib-lint": "eslint --fix src/**/*.ts"
   },
   "dependencies": {
-    "@tszip/tszip": "5.0.1",
+    "@tszip/tszip": "5.0.3",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "eslint-plugin-react": "^7.28.0",
