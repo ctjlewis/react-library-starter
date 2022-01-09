@@ -5,11 +5,3 @@ export const WelcomeMessage = () => {
     </h1>
   );
 };
-
-export const GoodbyeMessage = () => {
-  return (
-    <h1>
-      Goodbye
-    </h1>
-  );
-};

@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "yarn lib-build && yarn demo-build",
-    "dev": "concurrently 'yarn lib-dev' 'sleep 5 && yarn demo-dev'",
+    "dev": "concurrently 'yarn lib-dev' 'yarn demo-dev'",
     "demo-dev": "yarn next dev",
     "demo-build": "yarn next build",
     "demo-start": "yarn next start",

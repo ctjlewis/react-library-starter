@@ -1,7 +1,6 @@
 {
   "include": [
-    "src/**/*",
-    "next-env.d.ts"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules"
@@ -9,10 +8,12 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "components": ["dist"],
-      "components/styles": ["src/styles/index.css"],
-      "components/styles/*": ["src/styles/*/index.css"],
-      "components/*": ["dist/*"],
+      "styles": ["src/styles/index.css"],
+      "styles/*": ["src/styles/*/index.css"],
+      "components": ["src/components"],
+      "components/*": ["src/components/*"],
+      "compiled": ["dist/components"],
+      "compiled/*": ["dist/components/*"],
     },
     "moduleResolution": "Node",
     "target": "ESNext",
@@ -23,6 +24,7 @@
       "ESNext"
     ],
     "jsx": "preserve",
+    "rootDir": "src",
     "outDir": "dist",
     "allowJs": true,
     "importHelpers": true,
@@ -41,6 +43,6 @@
     "noEmit": false,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "incremental": true
+    "incremental": false
   }
 }
