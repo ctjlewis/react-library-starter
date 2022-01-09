@@ -2,7 +2,7 @@ export const Cards = () => {
   return (
     <div className="grid md:grid-cols-2">
       <a href="https://nextjs.org/docs" className="card">
-        <h4>Documentation &rarr;</h4>
+        <h4>Docs &rarr;</h4>
         <p>Find in-depth information about Next.js features and API.</p>
       </a>
 

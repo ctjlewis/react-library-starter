@@ -1,7 +1,7 @@
 .card {
   @apply m-4 p-6;
   @apply text-left rounded-lg;
-  @apply max-w-sm;
+  @apply max-w-xs;
 
   text-decoration: none;
   border: 1px solid #eaeaea;
