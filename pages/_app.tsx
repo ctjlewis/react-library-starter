@@ -12,7 +12,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <main className="px-4 py-8">
+      <main>
         <Component {...pageProps} />
       </main>
 
