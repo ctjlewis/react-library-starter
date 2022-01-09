@@ -2,14 +2,14 @@ module.exports = {
   reactStrictMode: true,
   webpack: ({ ...config }) => {
     /**
-     * tszip modules require top-level await because ESM requires top-level
-     * await. `next build` Webpack requires `experiments.layers` to be enabled
-     * with this configuration.
+     * For isomorphic tszip imports (import { name } from "cjs-module"),
+     * experimental flags are required. This is a temporary workaround for
+     * testing.
      */
-    config.experiments = {
-      topLevelAwait: true,
-      layers: true,
-    };
+    // config.experiments = {
+    //   topLevelAwait: true,
+    //   layers: true,
+    // };
     return {
       ...config,
     };
